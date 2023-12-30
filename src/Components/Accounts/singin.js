@@ -13,7 +13,7 @@ const SignIn = () => {
           alert('User not Exist')
         }else 
         {
-          if(isUser.email == email && isUser.password == password) {
+          if(isUser.email === email && isUser.password === password) {
             navigate('/dashboard');
             // alert('dashboard')
         }

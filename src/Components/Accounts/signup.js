@@ -1,7 +1,6 @@
 import { Col, Button, Row, Container, Card, Form } from "react-bootstrap";
 import { Link ,useNavigate} from "react-router-dom";
 import React,{useState} from "react";
-import Alert from 'react-bootstrap/Alert';
 
 const SignUp = () => {
     const navigate = useNavigate();
@@ -10,7 +9,7 @@ const SignUp = () => {
     const [password , setPassword] = useState("");
     const [confirmPassword , setConfirmPassword] = useState("");
 
-    
+    console.log(name)
   const postData = (event) => {    
     event.preventDefault();
     const auth = {
@@ -18,7 +17,7 @@ const SignUp = () => {
        password
     }
     localStorage.setItem('auth', JSON.stringify(auth));
-    if(password == confirmPassword) {
+    if(password === confirmPassword) {
         navigate('/sign-in');
     }
     else{

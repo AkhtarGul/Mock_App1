@@ -16,7 +16,7 @@ const User = () => {
   }, []);
 
   return (
-    <Table striped bordered hover>
+    <Table striped bordered hover className="mt-4">
       <thead>
         <tr>
           <th>#</th>
