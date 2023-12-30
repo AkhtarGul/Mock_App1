@@ -18,6 +18,7 @@ const ProductViewDetails = () => {
  // eslint-disable-next-line react-hooks/exhaustive-deps
  useEffect(() => {
     fetchInfo();
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []); // No dependencies in the array
 
   return (
