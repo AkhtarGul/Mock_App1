@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { Container, Nav, Navbar, NavDropdown, Form } from "react-bootstrap";
-import { Link, useNavigate } from "react-router-dom";
+import { NavLink, useNavigate } from "react-router-dom";
 import Modal from "react-bootstrap/Modal";
 import Button from "react-bootstrap/Button";
 
@@ -32,13 +32,13 @@ const NavBar = () => {
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="me-auto">
-              <Nav.Link as={Link} to="user">
+              <Nav.Link as={NavLink} to="user">
                 Users
               </Nav.Link>
-              <Nav.Link as={Link} to="posts">
+              <Nav.Link as={NavLink} to="posts">
                 Posts
               </Nav.Link>
-              <Nav.Link as={Link} to="products">
+              <Nav.Link as={NavLink} to="products">
                 Products
               </Nav.Link>
             </Nav>
